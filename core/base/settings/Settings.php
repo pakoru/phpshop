@@ -12,20 +12,24 @@ class Settings
       'admin' => [
           'alias' => 'admin',
           'path' => 'core/admin/controllers/',
-          'hrUrl' => false // human readable url
+          'hrUrl' => false, // human readable url
+          'routes' => [
+
+          ]
       ],
       'settings' => [
           'path' => 'core/base/settings/'
       ],
       'plugins' => [
           'path' => 'core/plugins/',
-          'hrUrl' => false
+          'hrUrl' => false,
+          'dir' => false
       ],
       'user' => [
           'path' => 'core/user/controllers/',
           'hrUrl'=> true,
           'routes' => [
-              'catalog' => 'site'
+
           ]
       ],
       'default' => [

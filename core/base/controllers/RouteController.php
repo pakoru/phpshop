@@ -6,16 +6,13 @@ use core\base\exceptions\RouteException;
 use core\base\settings\Settings;
 use core\base\settings\ShopSettings;
 
-class RouteController
+class RouteController extends BaseController
 {
 
     static private $_instance;
 
     protected $routes;
-    protected $controller;
-    protected $inputMethod;
-    protected $outputMethod;
-    protected $parameters;
+
 
 
     private function __clone()
@@ -29,7 +26,7 @@ class RouteController
         return self::$_instance = new self;
     }
 
-
+    // Ниже идет разбор адресной строки
     private function __construct()
     {
         $adress_str = $_SERVER['REQUEST_URI']; // getting address bar
@@ -45,19 +42,65 @@ class RouteController
             $this->routes = Settings::get('routes');
             if (!$this->routes) throw new RouteException('The site is under maintenance');
 
-            if(strrpos($adress_str, $this->routes['admin']['alias']) === strlen(PATH)){  // trying to use Admin Panel
+            $url = explode('/', substr($adress_str, strlen(PATH)));  // cut localhost <- /path/path -> in array
 
+            if($url[0] && $url[0] === $this->routes['admin']['alias']){   // trying to use Admin Panel
+                array_shift($url);
+
+                if ($url[0] && is_dir($_SERVER['DOCUMENT_ROOT'] . PATH . $this->routes['plugins']['path'] . $url[0])){
+
+                    $plugin = array_shift($url);
+                    $pluginSettings = $this->routes['settings']['path'] . ucfirst($plugin . 'Settings');
+
+                    if(file_exists($_SERVER['DOCUMENT_ROOT'] . PATH . $pluginSettings . '.php')){
+                        $pluginSettings = str_replace('/', '\\', $pluginSettings);
+                        $this->routes = $pluginSettings::get('routes');
+                    }
+
+                    $dir = $this->routes['plugins']['dir'] ? '/' . $this->routes['plugins']['dir'] . '/' : '/';
+                    $dir = str_replace('//','/',$dir);
+
+                    $this->controller = $this->routes['plugins']['path'] . $plugin . $dir;
+
+                    $hrUrl = $this->routes['plugins']['hrUrl'];
+                    $route = 'plugins';
+
+                }else{
+                    $this->controller = $this->routes['admin']['path'];
+                    $hrUrl = $this->routes['admin']['hrUrl'];
+                    $route = 'admin';
+                }
                 // ADMINKA
 
             }else{  // user panel
-                $url = explode('/', substr($adress_str, strlen(PATH)));  // cut localhost <- /path/path -> in array
                 $hrUrl = $this->routes['user']['hrUrl'];
                 $this->controller = $this->routes['user']['path'];
                 $route = 'user';
             }
             $this->createRoute($route, $url);
 
-            exit();
+            if($url[1]){
+                $count = count($url);
+                $key = '';
+
+                if(!$hrUrl){
+                    $i = 1;
+                }else{
+                    $this->parameters['alias'] = $url[1];
+                    $i = 2;
+                }
+
+                for( ; $i < $count; $i++){
+                    if(!$key){
+                        $key = $url[$i];
+                        $this->parameters[$key] = '';
+                    }else{
+                        $this->parameters[$key] = $url[$i];
+                        $key = '';
+                    }
+                }
+            }
+
         }else{
             try{
                 throw new \Exception('Incorrect site directory');

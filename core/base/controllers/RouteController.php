@@ -9,22 +9,9 @@ use core\base\settings\ShopSettings;
 class RouteController extends BaseController
 {
 
-    static private $_instance;
+    use Singleton;
 
     protected $routes;
-
-
-
-    private function __clone()
-    {
-    }
-
-    static public function getInstance(){
-        if(self::$_instance instanceof self){
-            return self::$_instance;
-        }
-        return self::$_instance = new self;
-    }
 
     // Ниже идет разбор адресной строки
     private function __construct()
@@ -40,6 +27,7 @@ class RouteController extends BaseController
 
         if ($path === PATH){
             $this->routes = Settings::get('routes');
+
             if (!$this->routes) throw new RouteException('The site is under maintenance');
 
             $url = explode('/', substr($adress_str, strlen(PATH)));  // cut localhost <- /path/path -> in array

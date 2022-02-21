@@ -9,8 +9,6 @@ class IndexController extends BaseController{
     protected $name;
 
     protected function InputData(){
-
-
         exit();
     }
 }

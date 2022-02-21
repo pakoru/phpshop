@@ -18575,3 +18575,1090 @@
 
 [360508] Log closed at 2022-02-16 21:42:16.604550
 
+[360508] Log opened at 2022-02-16 22:08:11.352585
+[360508] [Step Debug] INFO: Connecting to configured address/port: localhost:9003.
+[360508] [Step Debug] INFO: Connected to debugging client: localhost:9003 (through xdebug.client_host/xdebug.client_port). :-)
+[360508] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///home/pako/repos/phpshop/index.php" language="PHP" xdebug:language_version="8.0.5" protocol_version="1.0" appid="360508" idekey="PHPSTORM"><engine version="3.0.3"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2021 by Derick Rethans]]></copyright></init>
+
+[360508] [Step Debug] <- feature_set -i 1 -n show_hidden -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 2 -n max_depth -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 3 -n max_children -v 100
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 4 -n extended_properties -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 5 -n notify_ok -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[360508] [Step Debug] <- stdout -i 7 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[360508] [Step Debug] <- status -i 8
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[360508] [Step Debug] <- step_into -i 9
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></xdebug:message></response>
+
+[360508] [Step Debug] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[360508] [Step Debug] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="9" encoding="base64"><![CDATA[bG9jYWxob3N0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="4" encoding="base64"><![CDATA[ODAwMA==]]></property></response>
+
+[360508] [Step Debug] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="6" encoding="base64"><![CDATA[L2luZGV4]]></property></response>
+
+[360508] [Step Debug] <- breakpoint_set -i 15 -t line -f file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php -n 32
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="15" id="983640023" resolved="unresolved"></response>
+
+[360508] [Step Debug] <- stack_get -i 16
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="16"><stack where="{main}" level="0" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></stack></response>
+
+[360508] [Step Debug] <- run -i 17
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="32" state="enabled" hit_count="0" hit_value="0" id="983640023"></breakpoint></notify>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="17" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="32"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 18
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="18"><stack where="core\base\controllers\RouteController-&gt;__construct" level="0" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="32"></stack><stack where="core\base\controllers\RouteController::instance" level="1" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/Singleton.php" lineno="22"></stack
+[360508] [Step Debug] <- context_names -i 19
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="19"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[360508] [Step Debug] <- context_get -i 20 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="20" context="0"><property name="$adress_str" fullname="$adress_str" type="string" size="6" encoding="base64"><![CDATA[L2luZGV4]]></property><property name="$count" fullname="$count" type="uninitialized"></property><property name="$dir" fullname="$dir" type="uninitialized"></property><property name="$e" fullname="$e" type="uninitialized"></property><property name="$hrUrl" fullnam
+[360508] [Step Debug] <- context_get -i 21 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="21" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 22 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="22" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- property_get -i 23 -n $this->routes -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="23"><property name="$this-&gt;routes" fullname="$this-&gt;routes" type="array" children="1" numchildren="5" page="0" pagesize="100"><property name="admin" fullname="$this-&gt;routes[&quot;admin&quot;]" type="array" children="1" numchildren="4"></property><property name="settings" fullname="$this-&gt;routes[&quot;settings&quot;]" type="array" children="1" numchildren="1"></prope
+[360508] [Step Debug] <- property_get -i 24 -n $this->routes["default"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="24"><property name="$this-&gt;routes[&quot;default&quot;]" fullname="$this-&gt;routes[&quot;default&quot;]" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="controller" fullname="$this-&gt;routes[&quot;default&quot;][&quot;controller&quot;]" type="string" size="15" encoding="base64"><![CDATA[SW5kZXhDb250cm9sbGVy]]></property><property name="inpu
+[360508] [Step Debug] <- property_get -i 25 -n $this->routes["admin"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="25"><property name="$this-&gt;routes[&quot;admin&quot;]" fullname="$this-&gt;routes[&quot;admin&quot;]" type="array" children="1" numchildren="4" page="0" pagesize="100"><property name="alias" fullname="$this-&gt;routes[&quot;admin&quot;][&quot;alias&quot;]" type="string" size="5" encoding="base64"><![CDATA[YWRtaW4=]]></property><property name="path" fullname="$this-&gt;routes[
+[360508] [Step Debug] <- property_get -i 26 -n $this->routes["settings"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="26"><property name="$this-&gt;routes[&quot;settings&quot;]" fullname="$this-&gt;routes[&quot;settings&quot;]" type="array" children="1" numchildren="1" page="0" pagesize="100"><property name="path" fullname="$this-&gt;routes[&quot;settings&quot;][&quot;path&quot;]" type="string" size="19" encoding="base64"><![CDATA[Y29yZS9iYXNlL3NldHRpbmdzLw==]]></property></property></response
+[360508] [Step Debug] <- property_get -i 27 -n $this->routes["plugins"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="27"><property name="$this-&gt;routes[&quot;plugins&quot;]" fullname="$this-&gt;routes[&quot;plugins&quot;]" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="path" fullname="$this-&gt;routes[&quot;plugins&quot;][&quot;path&quot;]" type="string" size="13" encoding="base64"><![CDATA[Y29yZS9wbHVnaW5zLw==]]></property><property name="hrUrl" fullname=
+[360508] [Step Debug] <- stop -i 28
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="28" status="stopped" reason="ok"></response>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="28" status="stopping" reason="ok"></response>
+
+[360508] [Step Debug] <- detach -i 29
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="detach" transaction_id="29" status="stopping" reason="ok"></response>
+
+[360508] Log closed at 2022-02-16 22:08:53.934391
+
+[360508] Log opened at 2022-02-16 22:14:01.884496
+[360508] [Step Debug] INFO: Connecting to configured address/port: localhost:9003.
+[360508] [Step Debug] INFO: Connected to debugging client: localhost:9003 (through xdebug.client_host/xdebug.client_port). :-)
+[360508] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///home/pako/repos/phpshop/index.php" language="PHP" xdebug:language_version="8.0.5" protocol_version="1.0" appid="360508" idekey="PHPSTORM"><engine version="3.0.3"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2021 by Derick Rethans]]></copyright></init>
+
+[360508] [Step Debug] <- feature_set -i 1 -n show_hidden -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 2 -n max_depth -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 3 -n max_children -v 100
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 4 -n extended_properties -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 5 -n notify_ok -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[360508] [Step Debug] <- stdout -i 7 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[360508] [Step Debug] <- status -i 8
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[360508] [Step Debug] <- step_into -i 9
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></xdebug:message></response>
+
+[360508] [Step Debug] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[360508] [Step Debug] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="9" encoding="base64"><![CDATA[bG9jYWxob3N0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="4" encoding="base64"><![CDATA[ODAwMA==]]></property></response>
+
+[360508] [Step Debug] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="11" encoding="base64"><![CDATA[L2FkbWluL3Nob3A=]]></property></response>
+
+[360508] [Step Debug] <- breakpoint_set -i 15 -t line -f file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php -n 43
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="15" id="983640024" resolved="unresolved"></response>
+
+[360508] [Step Debug] <- stack_get -i 16
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="16"><stack where="{main}" level="0" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></stack></response>
+
+[360508] [Step Debug] <- run -i 17
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="43" state="enabled" hit_count="0" hit_value="0" id="983640024"></breakpoint></notify>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="17" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="43"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 18
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="18"><stack where="core\base\controllers\RouteController-&gt;__construct" level="0" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="43"></stack><stack where="core\base\controllers\RouteController::instance" level="1" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/Singleton.php" lineno="22"></stack
+[360508] [Step Debug] <- context_names -i 19
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="19"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[360508] [Step Debug] <- context_get -i 20 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="20" context="0"><property name="$adress_str" fullname="$adress_str" type="string" size="11" encoding="base64"><![CDATA[L2FkbWluL3Nob3A=]]></property><property name="$count" fullname="$count" type="uninitialized"></property><property name="$dir" fullname="$dir" type="uninitialized"></property><property name="$e" fullname="$e" type="uninitialized"></property><property name="$hrUrl
+[360508] [Step Debug] <- context_get -i 21 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="21" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 22 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="22" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- property_get -i 23 -n $this->routes -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="23"><property name="$this-&gt;routes" fullname="$this-&gt;routes" type="array" children="1" numchildren="5" page="0" pagesize="100"><property name="admin" fullname="$this-&gt;routes[&quot;admin&quot;]" type="array" children="1" numchildren="4"></property><property name="settings" fullname="$this-&gt;routes[&quot;settings&quot;]" type="array" children="1" numchildren="1"></prope
+[360508] [Step Debug] <- property_get -i 24 -n $this->routes["admin"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="24"><property name="$this-&gt;routes[&quot;admin&quot;]" fullname="$this-&gt;routes[&quot;admin&quot;]" type="array" children="1" numchildren="4" page="0" pagesize="100"><property name="alias" fullname="$this-&gt;routes[&quot;admin&quot;][&quot;alias&quot;]" type="string" size="5" encoding="base64"><![CDATA[YWRtaW4=]]></property><property name="path" fullname="$this-&gt;routes[
+[360508] [Step Debug] <- property_get -i 25 -n $this->routes["settings"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="25"><property name="$this-&gt;routes[&quot;settings&quot;]" fullname="$this-&gt;routes[&quot;settings&quot;]" type="array" children="1" numchildren="1" page="0" pagesize="100"><property name="path" fullname="$this-&gt;routes[&quot;settings&quot;][&quot;path&quot;]" type="string" size="19" encoding="base64"><![CDATA[Y29yZS9iYXNlL3NldHRpbmdzLw==]]></property></property></response
+[360508] [Step Debug] <- property_get -i 26 -n $this->routes["plugins"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="26"><property name="$this-&gt;routes[&quot;plugins&quot;]" fullname="$this-&gt;routes[&quot;plugins&quot;]" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="path" fullname="$this-&gt;routes[&quot;plugins&quot;][&quot;path&quot;]" type="string" size="13" encoding="base64"><![CDATA[Y29yZS9wbHVnaW5zLw==]]></property><property name="hrUrl" fullname=
+[360508] [Step Debug] <- property_get -i 27 -n $this->routes["user"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="27"><property name="$this-&gt;routes[&quot;user&quot;]" fullname="$this-&gt;routes[&quot;user&quot;]" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="path" fullname="$this-&gt;routes[&quot;user&quot;][&quot;path&quot;]" type="string" size="22" encoding="base64"><![CDATA[Y29yZS91c2VyL2NvbnRyb2xsZXJzLw==]]></property><property name="hrUrl" fullna
+[360508] [Step Debug] <- step_over -i 28
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="28" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="44"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 29
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="29"><stack where="core\base\controllers\RouteController-&gt;__construct" level="0" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="44"></stack><stack where="core\base\controllers\RouteController::instance" level="1" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/Singleton.php" lineno="22"></stack
+[360508] [Step Debug] <- context_get -i 30 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="30" context="0"><property name="$adress_str" fullname="$adress_str" type="string" size="11" encoding="base64"><![CDATA[L2FkbWluL3Nob3A=]]></property><property name="$count" fullname="$count" type="uninitialized"></property><property name="$dir" fullname="$dir" type="uninitialized"></property><property name="$e" fullname="$e" type="uninitialized"></property><property name="$hrUrl
+[360508] [Step Debug] <- context_get -i 31 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="31" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 32 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="32" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- property_get -i 33 -n $this->routes -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="33"><property name="$this-&gt;routes" fullname="$this-&gt;routes" type="array" children="1" numchildren="5" page="0" pagesize="100"><property name="admin" fullname="$this-&gt;routes[&quot;admin&quot;]" type="array" children="1" numchildren="4"></property><property name="settings" fullname="$this-&gt;routes[&quot;settings&quot;]" type="array" children="1" numchildren="1"></prope
+[360508] [Step Debug] <- property_get -i 34 -n $this->routes["admin"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="34"><property name="$this-&gt;routes[&quot;admin&quot;]" fullname="$this-&gt;routes[&quot;admin&quot;]" type="array" children="1" numchildren="4" page="0" pagesize="100"><property name="alias" fullname="$this-&gt;routes[&quot;admin&quot;][&quot;alias&quot;]" type="string" size="5" encoding="base64"><![CDATA[YWRtaW4=]]></property><property name="path" fullname="$this-&gt;routes[
+[360508] [Step Debug] <- property_get -i 35 -n $this->routes["settings"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="35"><property name="$this-&gt;routes[&quot;settings&quot;]" fullname="$this-&gt;routes[&quot;settings&quot;]" type="array" children="1" numchildren="1" page="0" pagesize="100"><property name="path" fullname="$this-&gt;routes[&quot;settings&quot;][&quot;path&quot;]" type="string" size="19" encoding="base64"><![CDATA[Y29yZS9iYXNlL3NldHRpbmdzLw==]]></property></property></response
+[360508] [Step Debug] <- property_get -i 36 -n $this->routes["plugins"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="36"><property name="$this-&gt;routes[&quot;plugins&quot;]" fullname="$this-&gt;routes[&quot;plugins&quot;]" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="path" fullname="$this-&gt;routes[&quot;plugins&quot;][&quot;path&quot;]" type="string" size="13" encoding="base64"><![CDATA[Y29yZS9wbHVnaW5zLw==]]></property><property name="hrUrl" fullname=
+[360508] [Step Debug] <- property_get -i 37 -n $this->routes["user"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="37"><property name="$this-&gt;routes[&quot;user&quot;]" fullname="$this-&gt;routes[&quot;user&quot;]" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="path" fullname="$this-&gt;routes[&quot;user&quot;][&quot;path&quot;]" type="string" size="22" encoding="base64"><![CDATA[Y29yZS91c2VyL2NvbnRyb2xsZXJzLw==]]></property><property name="hrUrl" fullna
+[360508] [Step Debug] <- step_over -i 38
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="38" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="45"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 39
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="39"><stack where="core\base\controllers\RouteController-&gt;__construct" level="0" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="45"></stack><stack where="core\base\controllers\RouteController::instance" level="1" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/Singleton.php" lineno="22"></stack
+[360508] [Step Debug] <- context_get -i 40 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="40" context="0"><property name="$adress_str" fullname="$adress_str" type="string" size="11" encoding="base64"><![CDATA[L2FkbWluL3Nob3A=]]></property><property name="$count" fullname="$count" type="uninitialized"></property><property name="$dir" fullname="$dir" type="uninitialized"></property><property name="$e" fullname="$e" type="uninitialized"></property><property name="$hrUrl
+[360508] [Step Debug] <- context_get -i 41 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="41" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 42 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="42" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- property_get -i 43 -n $this->routes -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="43"><property name="$this-&gt;routes" fullname="$this-&gt;routes" type="array" children="1" numchildren="5" page="0" pagesize="100"><property name="admin" fullname="$this-&gt;routes[&quot;admin&quot;]" type="array" children="1" numchildren="4"></property><property name="settings" fullname="$this-&gt;routes[&quot;settings&quot;]" type="array" children="1" numchildren="1"></prope
+[360508] [Step Debug] <- property_get -i 44 -n $this->routes["admin"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="44"><property name="$this-&gt;routes[&quot;admin&quot;]" fullname="$this-&gt;routes[&quot;admin&quot;]" type="array" children="1" numchildren="4" page="0" pagesize="100"><property name="alias" fullname="$this-&gt;routes[&quot;admin&quot;][&quot;alias&quot;]" type="string" size="5" encoding="base64"><![CDATA[YWRtaW4=]]></property><property name="path" fullname="$this-&gt;routes[
+[360508] [Step Debug] <- property_get -i 45 -n $this->routes["settings"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="45"><property name="$this-&gt;routes[&quot;settings&quot;]" fullname="$this-&gt;routes[&quot;settings&quot;]" type="array" children="1" numchildren="1" page="0" pagesize="100"><property name="path" fullname="$this-&gt;routes[&quot;settings&quot;][&quot;path&quot;]" type="string" size="19" encoding="base64"><![CDATA[Y29yZS9iYXNlL3NldHRpbmdzLw==]]></property></property></response
+[360508] [Step Debug] <- property_get -i 46 -n $this->routes["plugins"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="46"><property name="$this-&gt;routes[&quot;plugins&quot;]" fullname="$this-&gt;routes[&quot;plugins&quot;]" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="path" fullname="$this-&gt;routes[&quot;plugins&quot;][&quot;path&quot;]" type="string" size="13" encoding="base64"><![CDATA[Y29yZS9wbHVnaW5zLw==]]></property><property name="hrUrl" fullname=
+[360508] [Step Debug] <- property_get -i 47 -n $this->routes["user"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="47"><property name="$this-&gt;routes[&quot;user&quot;]" fullname="$this-&gt;routes[&quot;user&quot;]" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="path" fullname="$this-&gt;routes[&quot;user&quot;][&quot;path&quot;]" type="string" size="22" encoding="base64"><![CDATA[Y29yZS91c2VyL2NvbnRyb2xsZXJzLw==]]></property><property name="hrUrl" fullna
+[360508] [Step Debug] <- stop -i 48
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="48" status="stopped" reason="ok"></response>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="48" status="stopping" reason="ok"></response>
+
+[360508] [Step Debug] <- detach -i 49
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="detach" transaction_id="49" status="stopping" reason="ok"></response>
+
+[360508] Log closed at 2022-02-16 22:15:06.978969
+
+[360508] Log opened at 2022-02-16 22:15:59.811073
+[360508] [Step Debug] INFO: Connecting to configured address/port: localhost:9003.
+[360508] [Step Debug] INFO: Connected to debugging client: localhost:9003 (through xdebug.client_host/xdebug.client_port). :-)
+[360508] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///home/pako/repos/phpshop/index.php" language="PHP" xdebug:language_version="8.0.5" protocol_version="1.0" appid="360508" idekey="PHPSTORM"><engine version="3.0.3"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2021 by Derick Rethans]]></copyright></init>
+
+[360508] [Step Debug] <- feature_set -i 1 -n show_hidden -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 2 -n max_depth -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 3 -n max_children -v 100
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 4 -n extended_properties -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 5 -n notify_ok -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[360508] [Step Debug] <- stdout -i 7 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[360508] [Step Debug] <- status -i 8
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[360508] [Step Debug] <- step_into -i 9
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></xdebug:message></response>
+
+[360508] [Step Debug] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[360508] [Step Debug] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="9" encoding="base64"><![CDATA[bG9jYWxob3N0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="4" encoding="base64"><![CDATA[ODAwMA==]]></property></response>
+
+[360508] [Step Debug] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="11" encoding="base64"><![CDATA[L2FkbWluL3Nob3A=]]></property></response>
+
+[360508] [Step Debug] <- breakpoint_set -i 15 -t line -f file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php -n 43
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="15" id="983640025" resolved="unresolved"></response>
+
+[360508] [Step Debug] <- stack_get -i 16
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="16"><stack where="{main}" level="0" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></stack></response>
+
+[360508] [Step Debug] <- run -i 17
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="43" state="enabled" hit_count="0" hit_value="0" id="983640025"></breakpoint></notify>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="17" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="43"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 18
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="18"><stack where="core\base\controllers\RouteController-&gt;__construct" level="0" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="43"></stack><stack where="core\base\controllers\RouteController::instance" level="1" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/Singleton.php" lineno="22"></stack
+[360508] [Step Debug] <- context_names -i 19
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="19"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[360508] [Step Debug] <- context_get -i 20 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="20" context="0"><property name="$adress_str" fullname="$adress_str" type="string" size="11" encoding="base64"><![CDATA[L2FkbWluL3Nob3A=]]></property><property name="$count" fullname="$count" type="uninitialized"></property><property name="$dir" fullname="$dir" type="uninitialized"></property><property name="$e" fullname="$e" type="uninitialized"></property><property name="$hrUrl
+[360508] [Step Debug] <- context_get -i 21 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="21" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 22 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="22" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- property_get -i 23 -n $this->routes -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="23"><property name="$this-&gt;routes" fullname="$this-&gt;routes" type="array" children="1" numchildren="6" page="0" pagesize="100"><property name="admin" fullname="$this-&gt;routes[&quot;admin&quot;]" type="array" children="1" numchildren="4"></property><property name="settings" fullname="$this-&gt;routes[&quot;settings&quot;]" type="array" children="1" numchildren="1"></prope
+[360508] [Step Debug] <- property_get -i 24 -n $this->routes["p"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="24"><property name="$this-&gt;routes[&quot;p&quot;]" fullname="$this-&gt;routes[&quot;p&quot;]" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="0" fullname="$this-&gt;routes[&quot;p&quot;][0]" type="int"><![CDATA[1]]></property><property name="1" fullname="$this-&gt;routes[&quot;p&quot;][1]" type="int"><![CDATA[2]]></property><property name="2"
+[360508] [Step Debug] <- step_over -i 25
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="25" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="44"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 26
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="26"><stack where="core\base\controllers\RouteController-&gt;__construct" level="0" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="44"></stack><stack where="core\base\controllers\RouteController::instance" level="1" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/Singleton.php" lineno="22"></stack
+[360508] [Step Debug] <- context_get -i 27 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="27" context="0"><property name="$adress_str" fullname="$adress_str" type="string" size="11" encoding="base64"><![CDATA[L2FkbWluL3Nob3A=]]></property><property name="$count" fullname="$count" type="uninitialized"></property><property name="$dir" fullname="$dir" type="uninitialized"></property><property name="$e" fullname="$e" type="uninitialized"></property><property name="$hrUrl
+[360508] [Step Debug] <- context_get -i 28 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="28" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 29 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="29" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- property_get -i 30 -n $this->routes -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="30"><property name="$this-&gt;routes" fullname="$this-&gt;routes" type="array" children="1" numchildren="6" page="0" pagesize="100"><property name="admin" fullname="$this-&gt;routes[&quot;admin&quot;]" type="array" children="1" numchildren="4"></property><property name="settings" fullname="$this-&gt;routes[&quot;settings&quot;]" type="array" children="1" numchildren="1"></prope
+[360508] [Step Debug] <- property_get -i 31 -n $this->routes["p"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="31"><property name="$this-&gt;routes[&quot;p&quot;]" fullname="$this-&gt;routes[&quot;p&quot;]" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="0" fullname="$this-&gt;routes[&quot;p&quot;][0]" type="int"><![CDATA[1]]></property><property name="1" fullname="$this-&gt;routes[&quot;p&quot;][1]" type="int"><![CDATA[2]]></property><property name="2"
+[360508] [Step Debug] <- step_over -i 32
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="32" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="45"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 33
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="33"><stack where="core\base\controllers\RouteController-&gt;__construct" level="0" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="45"></stack><stack where="core\base\controllers\RouteController::instance" level="1" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/Singleton.php" lineno="22"></stack
+[360508] [Step Debug] <- context_get -i 34 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="34" context="0"><property name="$adress_str" fullname="$adress_str" type="string" size="11" encoding="base64"><![CDATA[L2FkbWluL3Nob3A=]]></property><property name="$count" fullname="$count" type="uninitialized"></property><property name="$dir" fullname="$dir" type="uninitialized"></property><property name="$e" fullname="$e" type="uninitialized"></property><property name="$hrUrl
+[360508] [Step Debug] <- context_get -i 35 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="35" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 36 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="36" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- property_get -i 37 -n $this->routes -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="37"><property name="$this-&gt;routes" fullname="$this-&gt;routes" type="array" children="1" numchildren="6" page="0" pagesize="100"><property name="admin" fullname="$this-&gt;routes[&quot;admin&quot;]" type="array" children="1" numchildren="4"></property><property name="settings" fullname="$this-&gt;routes[&quot;settings&quot;]" type="array" children="1" numchildren="1"></prope
+[360508] [Step Debug] <- property_get -i 38 -n $this->routes["p"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="38"><property name="$this-&gt;routes[&quot;p&quot;]" fullname="$this-&gt;routes[&quot;p&quot;]" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="0" fullname="$this-&gt;routes[&quot;p&quot;][0]" type="int"><![CDATA[1]]></property><property name="1" fullname="$this-&gt;routes[&quot;p&quot;][1]" type="int"><![CDATA[2]]></property><property name="2"
+[360508] [Step Debug] <- step_over -i 39
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="error"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/settings/Settings.php" lineno="78" type="Warning"><![CDATA[Undefined array key "routes"]]></xdebug:message></notify>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="39" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="48"></xdebug:message></response>
+
+[360508] [Step Debug] <- eval -i 40 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzdiODk3OTNmLThlZGMtNGQ2Yy05OTY1LTJhOWUzZTM5MmZmZCddPWVycm9yX3JlcG9ydGluZygpOw==
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="40"><property type="int"><![CDATA[22527]]></property></response>
+
+[360508] [Step Debug] <- stack_get -i 41
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="41"><stack where="core\base\controllers\RouteController-&gt;__construct" level="0" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="48"></stack><stack where="core\base\controllers\RouteController::instance" level="1" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/Singleton.php" lineno="22"></stack
+[360508] [Step Debug] <- context_get -i 42 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="42" context="0"><property name="$adress_str" fullname="$adress_str" type="string" size="11" encoding="base64"><![CDATA[L2FkbWluL3Nob3A=]]></property><property name="$count" fullname="$count" type="uninitialized"></property><property name="$dir" fullname="$dir" type="uninitialized"></property><property name="$e" fullname="$e" type="uninitialized"></property><property name="$hrUrl
+[360508] [Step Debug] <- context_get -i 43 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="43" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 44 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="44" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- property_get -i 45 -n $this->routes -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="45"><property name="$this-&gt;routes" fullname="$this-&gt;routes" type="array" children="1" numchildren="6" page="0" pagesize="100"><property name="admin" fullname="$this-&gt;routes[&quot;admin&quot;]" type="array" children="1" numchildren="4"></property><property name="settings" fullname="$this-&gt;routes[&quot;settings&quot;]" type="array" children="1" numchildren="1"></prope
+[360508] [Step Debug] <- property_get -i 46 -n $this->routes["p"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="46"><property name="$this-&gt;routes[&quot;p&quot;]" fullname="$this-&gt;routes[&quot;p&quot;]" type="array" children="1" numchildren="6" page="0" pagesize="100"><property name="0" fullname="$this-&gt;routes[&quot;p&quot;][0]" type="int"><![CDATA[1]]></property><property name="1" fullname="$this-&gt;routes[&quot;p&quot;][1]" type="int"><![CDATA[2]]></property><property name="2"
+[360508] [Step Debug] <- eval -i 47 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJ2FjM2VmMGY5LTdjZTMtNGY2MS05MDQyLWQzYTQ2OTZlMzhlOSddPWV2YWwoIm5hbWVzcGFjZSBjb3JlXFxiYXNlXFxzZXR0aW5nczt1c2UgY29yZVxcYmFzZVxcY29udHJvbGxlcnNcXFNpbmdsZXRvbjt1c2UgY29yZVxcYmFzZVxcc2V0dGluZ3NcXFNldHRpbmdzO3JldHVybiBbXG4gICAgICAgICdwbHVnaW5zJyA9PiBbXG4gICAgICAgICAgICAnZGlyJyA9PiBmYWxzZSxcbiAgICAgICAgICAgICdyb3V0ZXMnID0+IFtcblxuICAgICAgICAgICAgICAgIF1cbiAgICAgICAgXSxcbiAgICAgICAgJ3AnID0+IFs0LDUsNl1cbiAgICBdOyIp
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="47"><property type="array" children="1" numchildren="2" page="0" pagesize="100"><property name="plugins" type="array" children="1" numchildren="2"></property><property name="p" type="array" children="1" numchildren="3"></property></property></response>
+
+[360508] [Step Debug] <- eval -i 48 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJ2FkZGZiNDJmLWViOTYtNDlmMi04NGQzLTQyZjYxYTgyNDQ3MyddPWV2YWwoIm5hbWVzcGFjZSBjb3JlXFxiYXNlXFxzZXR0aW5nczt1c2UgY29yZVxcYmFzZVxcY29udHJvbGxlcnNcXFNpbmdsZXRvbjtyZXR1cm4gW1xuICAgICAgJ2FkbWluJyA9PiBbXG4gICAgICAgICAgJ2FsaWFzJyA9PiAnYWRtaW4nLFxuICAgICAgICAgICdwYXRoJyA9PiAnY29yZS9hZG1pbi9jb250cm9sbGVycy8nLFxuICAgICAgICAgICdoclVybCcgPT4gZmFsc2UsIC8vIGh1bWFuIHJlYWRhYmxlIHVybFxuICAgICAgICAgICdyb3V0ZXMnID0+IFtcblxuICAgICAgICAgIF1cbiAgICAgIF0sXG4gICAgICAnc2V0dGluZ3MnID
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="48"><property type="array" children="1" numchildren="6" page="0" pagesize="100"><property name="admin" type="array" children="1" numchildren="4"></property><property name="settings" type="array" children="1" numchildren="1"></property><property name="plugins" type="array" children="1" numchildren="3"></property><property name="user" type="array" children="1" numchildren="3"></property>
+[360508] [Step Debug] <- breakpoint_set -i 49 -t line -f file:///home/pako/repos/phpshop/index.php -n 18
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/index.php" lineno="19" state="enabled" hit_count="0" hit_value="0" id="983640026"></breakpoint></notify>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="49" id="983640026" resolved="resolved"></response>
+
+[360508] [Step Debug] <- breakpoint_remove -i 50 -d 983640025
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_remove" transaction_id="50"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="43" state="enabled" hit_count="1" hit_value="0" id="983640025"></breakpoint></response>
+
+[360508] [Step Debug] <- stop -i 51
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="51" status="stopped" reason="ok"></response>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="51" status="stopping" reason="ok"></response>
+
+[360508] [Step Debug] <- detach -i 52
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="detach" transaction_id="52" status="stopping" reason="ok"></response>
+
+[360508] Log closed at 2022-02-16 22:18:31.633805
+
+[360508] Log opened at 2022-02-16 22:18:38.824778
+[360508] [Step Debug] INFO: Connecting to configured address/port: localhost:9003.
+[360508] [Step Debug] INFO: Connected to debugging client: localhost:9003 (through xdebug.client_host/xdebug.client_port). :-)
+[360508] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///home/pako/repos/phpshop/index.php" language="PHP" xdebug:language_version="8.0.5" protocol_version="1.0" appid="360508" idekey="PHPSTORM"><engine version="3.0.3"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2021 by Derick Rethans]]></copyright></init>
+
+[360508] [Step Debug] <- feature_set -i 1 -n show_hidden -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 2 -n max_depth -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 3 -n max_children -v 100
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 4 -n extended_properties -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 5 -n notify_ok -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[360508] [Step Debug] <- stdout -i 7 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[360508] [Step Debug] <- status -i 8
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[360508] [Step Debug] <- step_into -i 9
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></xdebug:message></response>
+
+[360508] [Step Debug] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[360508] [Step Debug] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="9" encoding="base64"><![CDATA[bG9jYWxob3N0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="4" encoding="base64"><![CDATA[ODAwMA==]]></property></response>
+
+[360508] [Step Debug] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="11" encoding="base64"><![CDATA[L2FkbWluL3Nob3A=]]></property></response>
+
+[360508] [Step Debug] <- breakpoint_set -i 15 -t line -f file:///home/pako/repos/phpshop/index.php -n 18
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/index.php" lineno="18" state="enabled" hit_count="0" hit_value="0" id="983640027"></breakpoint></notify>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="15" id="983640027" resolved="resolved"></response>
+
+[360508] [Step Debug] <- stack_get -i 16
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="16"><stack where="{main}" level="0" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></stack></response>
+
+[360508] [Step Debug] <- run -i 17
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="17" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/index.php" lineno="18"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 18
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="18"><stack where="{main}" level="0" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="18"></stack></response>
+
+[360508] [Step Debug] <- context_names -i 19
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="19"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[360508] [Step Debug] <- context_get -i 20 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="20" context="0"><property name="$e" fullname="$e" type="uninitialized"></property><property name="$s" fullname="$s" type="array" children="1" numchildren="5" page="0" pagesize="100"><property name="admin" fullname="$s[&quot;admin&quot;]" type="array" children="1" numchildren="4"></property><property name="settings" fullname="$s[&quot;settings&quot;]" type="array" children="1" nu
+[360508] [Step Debug] <- context_get -i 21 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="21" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 22 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="22" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- eval -i 23 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzk3NDIyOGQ1LTJlYjgtNDExNS1iYzQyLWY2ZWVhZGYwZDg4MSddPWV2YWwoInVzZSBjb3JlXFxiYXNlXFxjb250cm9sbGVyc1xcUm91dGVDb250cm9sbGVyO3VzZSBjb3JlXFxiYXNlXFxleGNlcHRpb25zXFxSb3V0ZUV4Y2VwdGlvbjt1c2UgY29yZVxcYmFzZVxcc2V0dGluZ3NcXFNldHRpbmdzO3JldHVybiAoaXNzZXQoXCRzKSk/KFwkcyk6XCJJREVfRVZBTF9FUlJcIjsiKQ==
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="23"><property type="array" children="1" numchildren="5" page="0" pagesize="100"><property name="admin" type="array" children="1" numchildren="4"></property><property name="settings" type="array" children="1" numchildren="1"></property><property name="plugins" type="array" children="1" numchildren="3"></property><property name="user" type="array" children="1" numchildren="3"></property>
+[360508] [Step Debug] <- breakpoint_remove -i 24 -d 983640027
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_remove" transaction_id="24"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/index.php" lineno="18" state="enabled" hit_count="1" hit_value="0" id="983640027"></breakpoint></response>
+
+[360508] [Step Debug] <- breakpoint_set -i 25 -t line -f file:///home/pako/repos/phpshop/index.php -n 17
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/index.php" lineno="17" state="enabled" hit_count="0" hit_value="0" id="983640028"></breakpoint></notify>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="25" id="983640028" resolved="resolved"></response>
+
+[360508] [Step Debug] <- stop -i 26
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="26" status="stopped" reason="ok"></response>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="26" status="stopping" reason="ok"></response>
+
+[360508] [Step Debug] <- detach -i 27
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="detach" transaction_id="27" status="stopping" reason="ok"></response>
+
+[360508] Log closed at 2022-02-16 22:18:54.340840
+
+[360508] Log opened at 2022-02-16 22:18:57.737872
+[360508] [Step Debug] INFO: Connecting to configured address/port: localhost:9003.
+[360508] [Step Debug] INFO: Connected to debugging client: localhost:9003 (through xdebug.client_host/xdebug.client_port). :-)
+[360508] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///home/pako/repos/phpshop/index.php" language="PHP" xdebug:language_version="8.0.5" protocol_version="1.0" appid="360508" idekey="PHPSTORM"><engine version="3.0.3"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2021 by Derick Rethans]]></copyright></init>
+
+[360508] [Step Debug] <- feature_set -i 1 -n show_hidden -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 2 -n max_depth -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 3 -n max_children -v 100
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 4 -n extended_properties -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 5 -n notify_ok -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[360508] [Step Debug] <- stdout -i 7 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[360508] [Step Debug] <- status -i 8
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[360508] [Step Debug] <- step_into -i 9
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></xdebug:message></response>
+
+[360508] [Step Debug] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[360508] [Step Debug] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="9" encoding="base64"><![CDATA[bG9jYWxob3N0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="4" encoding="base64"><![CDATA[ODAwMA==]]></property></response>
+
+[360508] [Step Debug] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="11" encoding="base64"><![CDATA[L2FkbWluL3Nob3A=]]></property></response>
+
+[360508] [Step Debug] <- breakpoint_set -i 15 -t line -f file:///home/pako/repos/phpshop/index.php -n 17
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/index.php" lineno="17" state="enabled" hit_count="0" hit_value="0" id="983640029"></breakpoint></notify>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="15" id="983640029" resolved="resolved"></response>
+
+[360508] [Step Debug] <- stack_get -i 16
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="16"><stack where="{main}" level="0" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></stack></response>
+
+[360508] [Step Debug] <- run -i 17
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="17" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/index.php" lineno="17"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 18
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="18"><stack where="{main}" level="0" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="17"></stack></response>
+
+[360508] [Step Debug] <- context_names -i 19
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="19"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[360508] [Step Debug] <- context_get -i 20 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="20" context="0"><property name="$e" fullname="$e" type="uninitialized"></property><property name="$s" fullname="$s" type="uninitialized"></property><property name="$s1" fullname="$s1" type="uninitialized"></property></response>
+
+[360508] [Step Debug] <- context_get -i 21 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="21" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 22 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="22" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_into -i 23
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="23" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="343"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 24
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="24"><stack where="Composer\Autoload\ClassLoader-&gt;loadClass" level="0" type="file" filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="343"></stack><stack where="{main}" level="1" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="17"></stack></response>
+
+[360508] [Step Debug] <- context_get -i 25 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="25" context="0"><property name="$class" fullname="$class" type="string" size="27" encoding="base64"><![CDATA[Y29yZVxiYXNlXHNldHRpbmdzXFNldHRpbmdz]]></property><property name="$file" fullname="$file" type="uninitialized"></property><property name="$this" fullname="$this" type="object" classname="Composer\Autoload\ClassLoader" children="1" numchildren="12" page="0" pagesize="100">
+[360508] [Step Debug] <- context_get -i 26 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="26" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 27 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="27" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_into -i 28
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="28" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="360"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 29
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="29"><stack where="Composer\Autoload\ClassLoader-&gt;findFile" level="0" type="file" filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="360"></stack><stack where="Composer\Autoload\ClassLoader-&gt;loadClass" level="1" type="file" filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="343"></stack><stack where="{main}" leve
+[360508] [Step Debug] <- context_get -i 30 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="30" context="0"><property name="$class" fullname="$class" type="string" size="27" encoding="base64"><![CDATA[Y29yZVxiYXNlXHNldHRpbmdzXFNldHRpbmdz]]></property><property name="$file" fullname="$file" type="uninitialized"></property><property name="$hit" fullname="$hit" type="uninitialized"></property><property name="$this" fullname="$this" type="object" classname="Composer\Autolo
+[360508] [Step Debug] <- context_get -i 31 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="31" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 32 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="32" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_over -i 33
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="33" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="361"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 34
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="34"><stack where="Composer\Autoload\ClassLoader-&gt;findFile" level="0" type="file" filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="361"></stack><stack where="Composer\Autoload\ClassLoader-&gt;loadClass" level="1" type="file" filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="343"></stack><stack where="{main}" leve
+[360508] [Step Debug] <- context_get -i 35 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="35" context="0"><property name="$class" fullname="$class" type="string" size="27" encoding="base64"><![CDATA[Y29yZVxiYXNlXHNldHRpbmdzXFNldHRpbmdz]]></property><property name="$file" fullname="$file" type="uninitialized"></property><property name="$hit" fullname="$hit" type="uninitialized"></property><property name="$this" fullname="$this" type="object" classname="Composer\Autolo
+[360508] [Step Debug] <- context_get -i 36 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="36" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 37 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="37" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_into -i 38
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="38" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="344"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 39
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="39"><stack where="Composer\Autoload\ClassLoader-&gt;loadClass" level="0" type="file" filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="344"></stack><stack where="{main}" level="1" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="17"></stack></response>
+
+[360508] [Step Debug] <- context_get -i 40 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="40" context="0"><property name="$class" fullname="$class" type="string" size="27" encoding="base64"><![CDATA[Y29yZVxiYXNlXHNldHRpbmdzXFNldHRpbmdz]]></property><property name="$file" fullname="$file" type="string" size="78" encoding="base64"><![CDATA[L2hvbWUvcGFrby9yZXBvcy9waHBzaG9wL3ZlbmRvci9jb21wb3Nlci8uLi8uLi9jb3JlL2Jhc2Uvc2V0dGluZ3MvU2V0dGluZ3MucGhw]]></property><property nam
+[360508] [Step Debug] <- context_get -i 41 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="41" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 42 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="42" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_into -i 43
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="43" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="476"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 44
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="44"><stack where="Composer\Autoload\includeFile" level="0" type="file" filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="476"></stack><stack where="Composer\Autoload\ClassLoader-&gt;loadClass" level="1" type="file" filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="344"></stack><stack where="{main}" level="2" type="f
+[360508] [Step Debug] <- context_get -i 45 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="45" context="0"><property name="$file" fullname="$file" type="string" size="78" encoding="base64"><![CDATA[L2hvbWUvcGFrby9yZXBvcy9waHBzaG9wL3ZlbmRvci9jb21wb3Nlci8uLi8uLi9jb3JlL2Jhc2Uvc2V0dGluZ3MvU2V0dGluZ3MucGhw]]></property></response>
+
+[360508] [Step Debug] <- context_get -i 46 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="46" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 47 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="47" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_over -i 48
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="48" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="477"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 49
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="49"><stack where="Composer\Autoload\includeFile" level="0" type="file" filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="477"></stack><stack where="Composer\Autoload\ClassLoader-&gt;loadClass" level="1" type="file" filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="344"></stack><stack where="{main}" level="2" type="f
+[360508] [Step Debug] <- context_get -i 50 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="50" context="0"><property name="$file" fullname="$file" type="string" size="78" encoding="base64"><![CDATA[L2hvbWUvcGFrby9yZXBvcy9waHBzaG9wL3ZlbmRvci9jb21wb3Nlci8uLi8uLi9jb3JlL2Jhc2Uvc2V0dGluZ3MvU2V0dGluZ3MucGhw]]></property></response>
+
+[360508] [Step Debug] <- context_get -i 51 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="51" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 52 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="52" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_over -i 53
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="53" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="346"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 54
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="54"><stack where="Composer\Autoload\ClassLoader-&gt;loadClass" level="0" type="file" filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="346"></stack><stack where="{main}" level="1" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="17"></stack></response>
+
+[360508] [Step Debug] <- context_get -i 55 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="55" context="0"><property name="$class" fullname="$class" type="string" size="27" encoding="base64"><![CDATA[Y29yZVxiYXNlXHNldHRpbmdzXFNldHRpbmdz]]></property><property name="$file" fullname="$file" type="string" size="78" encoding="base64"><![CDATA[L2hvbWUvcGFrby9yZXBvcy9waHBzaG9wL3ZlbmRvci9jb21wb3Nlci8uLi8uLi9jb3JlL2Jhc2Uvc2V0dGluZ3MvU2V0dGluZ3MucGhw]]></property><property nam
+[360508] [Step Debug] <- context_get -i 56 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="56" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 57 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="57" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_into -i 58
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="58" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/settings/Settings.php" lineno="51"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 59
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="59"><stack where="core\base\settings\Settings::get" level="0" type="file" filename="file:///home/pako/repos/phpshop/core/base/settings/Settings.php" lineno="51"></stack><stack where="{main}" level="1" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="17"></stack></response>
+
+[360508] [Step Debug] <- context_get -i 60 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="60" context="0"><property name="$property" fullname="$property" type="string" size="6" encoding="base64"><![CDATA[cm91dGVz]]></property><property name="::" fullname="::" type="object" classname="core\base\settings\Settings" children="1" numchildren="1"><property name="::_instance" fullname="::_instance" type="null" facet="static private"></property></property></response>
+
+[360508] [Step Debug] <- context_get -i 61 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="61" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 62 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="62" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_over -i 63
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="63" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/index.php" lineno="18"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 64
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="64"><stack where="{main}" level="0" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="18"></stack></response>
+
+[360508] [Step Debug] <- context_get -i 65 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="65" context="0"><property name="$e" fullname="$e" type="uninitialized"></property><property name="$s" fullname="$s" type="array" children="1" numchildren="5" page="0" pagesize="100"><property name="admin" fullname="$s[&quot;admin&quot;]" type="array" children="1" numchildren="4"></property><property name="settings" fullname="$s[&quot;settings&quot;]" type="array" children="1" nu
+[360508] [Step Debug] <- context_get -i 66 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="66" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 67 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="67" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_into -i 68
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="68" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/settings/Settings.php" lineno="51"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 69
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="69"><stack where="core\base\settings\Settings::get" level="0" type="file" filename="file:///home/pako/repos/phpshop/core/base/settings/Settings.php" lineno="51"></stack><stack where="{main}" level="1" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="18"></stack></response>
+
+[360508] [Step Debug] <- context_get -i 70 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="70" context="0"><property name="$property" fullname="$property" type="string" size="11" encoding="base64"><![CDATA[dGVtcGxhdGVBcnI=]]></property><property name="::" fullname="::" type="object" classname="core\base\settings\Settings" children="1" numchildren="1"><property name="::_instance" fullname="::_instance" type="object" classname="core\base\settings\Settings" children="1" 
+[360508] [Step Debug] <- context_get -i 71 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="71" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 72 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="72" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_over -i 73
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="73" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/index.php" lineno="19"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 74
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="74"><stack where="{main}" level="0" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="19"></stack></response>
+
+[360508] [Step Debug] <- context_get -i 75 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="75" context="0"><property name="$e" fullname="$e" type="uninitialized"></property><property name="$s" fullname="$s" type="array" children="1" numchildren="5" page="0" pagesize="100"><property name="admin" fullname="$s[&quot;admin&quot;]" type="array" children="1" numchildren="4"></property><property name="settings" fullname="$s[&quot;settings&quot;]" type="array" children="1" nu
+[360508] [Step Debug] <- context_get -i 76 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="76" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 77 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="77" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_into -i 78
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="78" status="stopping" reason="ok"></response>
+
+[360508] [Step Debug] <- detach -i 79
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="detach" transaction_id="79" status="stopping" reason="ok"></response>
+
+[360508] Log closed at 2022-02-16 22:19:51.463480
+
+[360508] Log opened at 2022-02-16 22:19:51.463827
+[360508] [Step Debug] INFO: Connecting to configured address/port: localhost:9003.
+[360508] [Step Debug] INFO: Connected to debugging client: localhost:9003 (through xdebug.client_host/xdebug.client_port). :-)
+[360508] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///home/pako/repos/phpshop/index.php" language="PHP" xdebug:language_version="8.0.5" protocol_version="1.0" appid="360508" idekey="PHPSTORM"><engine version="3.0.3"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2021 by Derick Rethans]]></copyright></init>
+
+[360508] [Step Debug] <- feature_set -i 1 -n show_hidden -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 2 -n max_depth -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 3 -n max_children -v 100
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 4 -n extended_properties -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 5 -n notify_ok -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[360508] [Step Debug] <- stdout -i 7 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[360508] [Step Debug] <- status -i 8
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[360508] [Step Debug] <- step_into -i 9
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></xdebug:message></response>
+
+[360508] [Step Debug] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[360508] [Step Debug] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="9" encoding="base64"><![CDATA[bG9jYWxob3N0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="4" encoding="base64"><![CDATA[ODAwMA==]]></property></response>
+
+[360508] [Step Debug] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="11" encoding="base64"><![CDATA[L2FkbWluL3Nob3A=]]></property></response>
+
+[360508] [Step Debug] <- breakpoint_set -i 15 -t line -f file:///home/pako/repos/phpshop/index.php -n 17
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/index.php" lineno="17" state="enabled" hit_count="0" hit_value="0" id="983640030"></breakpoint></notify>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="15" id="983640030" resolved="resolved"></response>
+
+[360508] [Step Debug] <- stack_get -i 16
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="16"><stack where="{main}" level="0" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></stack></response>
+
+[360508] [Step Debug] <- run -i 17
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="17" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/index.php" lineno="17"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 18
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="18"><stack where="{main}" level="0" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="17"></stack></response>
+
+[360508] [Step Debug] <- context_names -i 19
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="19"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[360508] [Step Debug] <- context_get -i 20 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="20" context="0"><property name="$e" fullname="$e" type="uninitialized"></property><property name="$s" fullname="$s" type="uninitialized"></property><property name="$s1" fullname="$s1" type="uninitialized"></property></response>
+
+[360508] [Step Debug] <- context_get -i 21 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="21" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 22 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="22" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- eval -i 23 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzU5ZWE2YmE2LWIxZGMtNDUyZi1hZWFhLWI1YzEyZDA2MjkzMSddPWV2YWwoInVzZSBjb3JlXFxiYXNlXFxjb250cm9sbGVyc1xcUm91dGVDb250cm9sbGVyO3VzZSBjb3JlXFxiYXNlXFxleGNlcHRpb25zXFxSb3V0ZUV4Y2VwdGlvbjt1c2UgY29yZVxcYmFzZVxcc2V0dGluZ3NcXFNldHRpbmdzO3JldHVybiAndGVtcGxhdGVBcnInOyIp
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="23"><property type="string" size="11" encoding="base64"><![CDATA[dGVtcGxhdGVBcnI=]]></property></response>
+
+[360508] [Step Debug] <- step_into -i 24
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="24" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="343"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 25
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="25"><stack where="Composer\Autoload\ClassLoader-&gt;loadClass" level="0" type="file" filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="343"></stack><stack where="{main}" level="1" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="17"></stack></response>
+
+[360508] [Step Debug] <- context_get -i 26 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="26" context="0"><property name="$class" fullname="$class" type="string" size="27" encoding="base64"><![CDATA[Y29yZVxiYXNlXHNldHRpbmdzXFNldHRpbmdz]]></property><property name="$file" fullname="$file" type="uninitialized"></property><property name="$this" fullname="$this" type="object" classname="Composer\Autoload\ClassLoader" children="1" numchildren="12" page="0" pagesize="100">
+[360508] [Step Debug] <- context_get -i 27 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="27" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 28 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="28" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_over -i 29
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="29" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="344"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 30
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="30"><stack where="Composer\Autoload\ClassLoader-&gt;loadClass" level="0" type="file" filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="344"></stack><stack where="{main}" level="1" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="17"></stack></response>
+
+[360508] [Step Debug] <- context_get -i 31 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="31" context="0"><property name="$class" fullname="$class" type="string" size="27" encoding="base64"><![CDATA[Y29yZVxiYXNlXHNldHRpbmdzXFNldHRpbmdz]]></property><property name="$file" fullname="$file" type="string" size="78" encoding="base64"><![CDATA[L2hvbWUvcGFrby9yZXBvcy9waHBzaG9wL3ZlbmRvci9jb21wb3Nlci8uLi8uLi9jb3JlL2Jhc2Uvc2V0dGluZ3MvU2V0dGluZ3MucGhw]]></property><property nam
+[360508] [Step Debug] <- context_get -i 32 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="32" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 33 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="33" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_over -i 34
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="34" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="346"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 35
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="35"><stack where="Composer\Autoload\ClassLoader-&gt;loadClass" level="0" type="file" filename="file:///home/pako/repos/phpshop/vendor/composer/ClassLoader.php" lineno="346"></stack><stack where="{main}" level="1" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="17"></stack></response>
+
+[360508] [Step Debug] <- context_get -i 36 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="36" context="0"><property name="$class" fullname="$class" type="string" size="27" encoding="base64"><![CDATA[Y29yZVxiYXNlXHNldHRpbmdzXFNldHRpbmdz]]></property><property name="$file" fullname="$file" type="string" size="78" encoding="base64"><![CDATA[L2hvbWUvcGFrby9yZXBvcy9waHBzaG9wL3ZlbmRvci9jb21wb3Nlci8uLi8uLi9jb3JlL2Jhc2Uvc2V0dGluZ3MvU2V0dGluZ3MucGhw]]></property><property nam
+[360508] [Step Debug] <- context_get -i 37 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="37" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 38 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="38" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_over -i 39
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="39" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/settings/Settings.php" lineno="51"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 40
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="40"><stack where="core\base\settings\Settings::get" level="0" type="file" filename="file:///home/pako/repos/phpshop/core/base/settings/Settings.php" lineno="51"></stack><stack where="{main}" level="1" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="17"></stack></response>
+
+[360508] [Step Debug] <- context_get -i 41 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="41" context="0"><property name="$property" fullname="$property" type="string" size="6" encoding="base64"><![CDATA[cm91dGVz]]></property><property name="::" fullname="::" type="object" classname="core\base\settings\Settings" children="1" numchildren="1"><property name="::_instance" fullname="::_instance" type="null" facet="static private"></property></property></response>
+
+[360508] [Step Debug] <- context_get -i 42 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="42" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 43 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="43" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_into -i 44
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="44" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/Singleton.php" lineno="19"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 45
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="45"><stack where="core\base\settings\Settings::instance" level="0" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/Singleton.php" lineno="19"></stack><stack where="core\base\settings\Settings::get" level="1" type="file" filename="file:///home/pako/repos/phpshop/core/base/settings/Settings.php" lineno="51"></stack><stack where="{main}" level="2" type="fi
+[360508] [Step Debug] <- context_get -i 46 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="46" context="0"><property name="::" fullname="::" type="object" classname="core\base\settings\Settings" children="1" numchildren="1"><property name="::_instance" fullname="::_instance" type="null" facet="static private"></property></property></response>
+
+[360508] [Step Debug] <- context_get -i 47 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="47" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 48 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="48" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_over -i 49
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="49" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/Singleton.php" lineno="22"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 50
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="50"><stack where="core\base\settings\Settings::instance" level="0" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/Singleton.php" lineno="22"></stack><stack where="core\base\settings\Settings::get" level="1" type="file" filename="file:///home/pako/repos/phpshop/core/base/settings/Settings.php" lineno="51"></stack><stack where="{main}" level="2" type="fi
+[360508] [Step Debug] <- context_get -i 51 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="51" context="0"><property name="::" fullname="::" type="object" classname="core\base\settings\Settings" children="1" numchildren="1"><property name="::_instance" fullname="::_instance" type="null" facet="static private"></property></property></response>
+
+[360508] [Step Debug] <- context_get -i 52 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="52" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 53 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="53" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_over -i 54
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="54" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/index.php" lineno="18"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 55
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="55"><stack where="{main}" level="0" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="18"></stack></response>
+
+[360508] [Step Debug] <- context_get -i 56 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="56" context="0"><property name="$IDE_EVAL_CACHE" fullname="$IDE_EVAL_CACHE" type="array" children="1" numchildren="1" page="0" pagesize="100"><property name="59ea6ba6-b1dc-452f-aeaa-b5c12d062931" fullname="$IDE_EVAL_CACHE[&quot;59ea6ba6-b1dc-452f-aeaa-b5c12d062931&quot;]" type="string" size="11" encoding="base64"><![CDATA[dGVtcGxhdGVBcnI=]]></property></property><property name="
+[360508] [Step Debug] <- context_get -i 57 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="57" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 58 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="58" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- step_over -i 59
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="59" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/index.php" lineno="19"></xdebug:message></response>
+
+[360508] [Step Debug] <- stack_get -i 60
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="60"><stack where="{main}" level="0" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="19"></stack></response>
+
+[360508] [Step Debug] <- context_get -i 61 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="61" context="0"><property name="$IDE_EVAL_CACHE" fullname="$IDE_EVAL_CACHE" type="array" children="1" numchildren="1" page="0" pagesize="100"><property name="59ea6ba6-b1dc-452f-aeaa-b5c12d062931" fullname="$IDE_EVAL_CACHE[&quot;59ea6ba6-b1dc-452f-aeaa-b5c12d062931&quot;]" type="string" size="11" encoding="base64"><![CDATA[dGVtcGxhdGVBcnI=]]></property></property><property name="
+[360508] [Step Debug] <- context_get -i 62 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="62" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 63 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="63" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- property_get -i 64 -n $s1["text"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="64"><property name="$s1[&quot;text&quot;]" fullname="$s1[&quot;text&quot;]" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="0" fullname="$s1[&quot;text&quot;][0]" type="string" size="4" encoding="base64"><![CDATA[bmFtZQ==]]></property><property name="1" fullname="$s1[&quot;text&quot;][1]" type="string" size="5" encoding="base64"><![CDATA[cGhvbm
+[360508] [Step Debug] <- property_get -i 65 -n $s1["textarea"] -d 0 -c 0 -p 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="property_get" transaction_id="65"><property name="$s1[&quot;textarea&quot;]" fullname="$s1[&quot;textarea&quot;]" type="array" children="1" numchildren="2" page="0" pagesize="100"><property name="0" fullname="$s1[&quot;textarea&quot;][0]" type="string" size="7" encoding="base64"><![CDATA[Y29udGVudA==]]></property><property name="1" fullname="$s1[&quot;textarea&quot;][1]" type="string" size="8" encoding="bas
+[360508] [Step Debug] <- stop -i 66
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="66" status="stopped" reason="ok"></response>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="66" status="stopping" reason="ok"></response>
+
+[360508] [Step Debug] <- detach -i 67
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="detach" transaction_id="67" status="stopping" reason="ok"></response>
+
+[360508] Log closed at 2022-02-16 22:21:17.622561
+
+[360508] Log opened at 2022-02-16 22:22:42.660368
+[360508] [Step Debug] INFO: Connecting to configured address/port: localhost:9003.
+[360508] [Step Debug] INFO: Connected to debugging client: localhost:9003 (through xdebug.client_host/xdebug.client_port). :-)
+[360508] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///home/pako/repos/phpshop/index.php" language="PHP" xdebug:language_version="8.0.5" protocol_version="1.0" appid="360508" idekey="PHPSTORM"><engine version="3.0.3"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2021 by Derick Rethans]]></copyright></init>
+
+[360508] [Step Debug] <- feature_set -i 1 -n show_hidden -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 2 -n max_depth -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 3 -n max_children -v 100
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 4 -n extended_properties -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 5 -n notify_ok -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[360508] [Step Debug] <- stdout -i 7 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[360508] [Step Debug] <- status -i 8
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[360508] [Step Debug] <- step_into -i 9
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></xdebug:message></response>
+
+[360508] [Step Debug] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[360508] [Step Debug] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="9" encoding="base64"><![CDATA[bG9jYWxob3N0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="4" encoding="base64"><![CDATA[ODAwMA==]]></property></response>
+
+[360508] [Step Debug] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="11" encoding="base64"><![CDATA[L2FkbWluL3Nob3A=]]></property></response>
+
+[360508] [Step Debug] <- breakpoint_set -i 15 -t line -f file:///home/pako/repos/phpshop/core/user/controllers/IndexController.php -n 14
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="15" id="983640031" resolved="unresolved"></response>
+
+[360508] [Step Debug] <- stack_get -i 16
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="16"><stack where="{main}" level="0" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></stack></response>
+
+[360508] [Step Debug] <- run -i 17
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="error"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/settings/Settings.php" lineno="77" type="Warning"><![CDATA[Undefined array key "routes"]]></xdebug:message></notify>
+
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="error"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="116" type="Warning"><![CDATA[Undefined array key 1]]></xdebug:message></notify>
+
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="error"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="118" type="Warning"><![CDATA[Undefined array key 2]]></xdebug:message></notify>
+
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="error"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="70" type="Warning"><![CDATA[Undefined array key 1]]></xdebug:message></notify>
+
+[360508] [Step Debug] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Q2xhc3MgImNvcmVccGx1Z2luc1xzaG9wXEluZGV4Q29udHJvbGxlciIgZG9lcyBub3QgZXhpc3Q=]]></stream>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="17" status="stopping" reason="ok"></response>
+
+[360508] [Step Debug] <- eval -i 18 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzliYTA3NTA5LTY3OTYtNDQwMy1hOTQ3LWJhMzdhMzI2Y2YwZCddPWVycm9yX3JlcG9ydGluZygpOw==
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="18"><error code="5"><message><![CDATA[command is not available]]></message></error></response>
+
+[360508] Log closed at 2022-02-16 22:22:42.785142
+
+[360508] Log opened at 2022-02-16 22:22:49.491478
+[360508] [Step Debug] INFO: Connecting to configured address/port: localhost:9003.
+[360508] [Step Debug] INFO: Connected to debugging client: localhost:9003 (through xdebug.client_host/xdebug.client_port). :-)
+[360508] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///home/pako/repos/phpshop/index.php" language="PHP" xdebug:language_version="8.0.5" protocol_version="1.0" appid="360508" idekey="PHPSTORM"><engine version="3.0.3"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2021 by Derick Rethans]]></copyright></init>
+
+[360508] [Step Debug] <- feature_set -i 1 -n show_hidden -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 2 -n max_depth -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 3 -n max_children -v 100
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 4 -n extended_properties -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 5 -n notify_ok -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[360508] [Step Debug] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[360508] [Step Debug] <- stdout -i 7 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[360508] [Step Debug] <- status -i 8
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[360508] [Step Debug] <- step_into -i 9
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></xdebug:message></response>
+
+[360508] [Step Debug] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[360508] [Step Debug] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="9" encoding="base64"><![CDATA[bG9jYWxob3N0]]></property></response>
+
+[360508] [Step Debug] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="4" encoding="base64"><![CDATA[ODAwMA==]]></property></response>
+
+[360508] [Step Debug] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="1" encoding="base64"><![CDATA[Lw==]]></property></response>
+
+[360508] [Step Debug] <- breakpoint_set -i 15 -t line -f file:///home/pako/repos/phpshop/core/user/controllers/IndexController.php -n 14
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="15" id="983640032" resolved="unresolved"></response>
+
+[360508] [Step Debug] <- stack_get -i 16
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="16"><stack where="{main}" level="0" type="file" filename="file:///home/pako/repos/phpshop/index.php" lineno="3"></stack></response>
+
+[360508] [Step Debug] <- run -i 17
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="error"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="116" type="Warning"><![CDATA[Undefined array key 1]]></xdebug:message></notify>
+
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="error"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="118" type="Warning"><![CDATA[Undefined array key 2]]></xdebug:message></notify>
+
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="error"><xdebug:message filename="file:///home/pako/repos/phpshop/core/base/controllers/RouteController.php" lineno="70" type="Warning"><![CDATA[Undefined array key 1]]></xdebug:message></notify>
+
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/core/user/controllers/IndexController.php" lineno="14" state="enabled" hit_count="0" hit_value="0" id="983640032"></breakpoint></notify>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="17" status="break" reason="ok"><xdebug:message filename="file:///home/pako/repos/phpshop/core/user/controllers/IndexController.php" lineno="14"></xdebug:message></response>
+
+[360508] [Step Debug] <- eval -i 18 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzRkZmU3YTk4LTUwNDktNDY2NS1hZjI1LWFmNjYwNjMxZmExMCddPWVycm9yX3JlcG9ydGluZygpOw==
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="18"><property type="int"><![CDATA[22527]]></property></response>
+
+[360508] [Step Debug] <- eval -i 19 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzJmZjgwZWNlLTA1MTAtNGZjNy04NjNmLWJmYzE0ZWE2M2UzMiddPWVycm9yX3JlcG9ydGluZygpOw==
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="19"><property type="int"><![CDATA[22527]]></property></response>
+
+[360508] [Step Debug] <- eval -i 20 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzk5NTFmNmUwLTEzM2YtNDA3OS1iMjVmLTY3YjNmM2U5ZDQyYSddPWVycm9yX3JlcG9ydGluZygpOw==
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="20"><property type="int"><![CDATA[22527]]></property></response>
+
+[360508] [Step Debug] <- stack_get -i 21
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="21"><stack where="core\user\controllers\IndexController-&gt;InputData" level="0" type="file" filename="file:///home/pako/repos/phpshop/core/user/controllers/IndexController.php" lineno="14"></stack><stack where="core\user\controllers\IndexController-&gt;request" level="1" type="file" filename="file:///home/pako/repos/phpshop/core/base/controllers/BaseController.php" lineno="46"></
+[360508] [Step Debug] <- context_names -i 22
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="22"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[360508] [Step Debug] <- context_get -i 23 -d 0 -c 0
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="23" context="0"><property name="$this" fullname="$this" type="object" classname="core\user\controllers\IndexController" children="1" numchildren="9" page="0" pagesize="100"><property name="name" fullname="$this-&gt;name" facet="protected" type="null"></property><property name="page" fullname="$this-&gt;page" facet="protected" type="null"></property><property name="errors" fullna
+[360508] [Step Debug] <- context_get -i 24 -d 0 -c 1
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="24" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="1" numchildren="3" page="0" pagesize="100"><property name="Idea-59f2dda0" fullname="$_COOKIE[&quot;Idea-59f2dda0&quot;]" type="string" size="36" encoding="base64"><![CDATA[YmMwZDU0OTMtMGVlMy00MjUwLTg5MzMtNjUzZWE4ZDc2YzFl]]></property><property name="XDEBUG_SESSION" fullname="$_COOKIE[&quot;XDEBU
+[360508] [Step Debug] <- context_get -i 25 -d 0 -c 2
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="25" context="2"><property name="VG_ACCESS" fullname="VG_ACCESS" type="bool" facet="constant"><![CDATA[1]]></property><property name="SITE_URL" fullname="SITE_URL" type="string" size="22" facet="constant" encoding="base64"><![CDATA[aHR0cDovL2xvY2FsaG9zdDo4MDAwLw==]]></property><property name="PATH" fullname="PATH" type="string" size="1" facet="constant" encoding="base64"><![CDATA
+[360508] [Step Debug] <- breakpoint_remove -i 26 -d 983640032
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_remove" transaction_id="26"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/core/user/controllers/IndexController.php" lineno="14" state="enabled" hit_count="1" hit_value="0" id="983640032"></breakpoint></response>
+
+[360508] [Step Debug] <- breakpoint_set -i 27 -t line -f file:///home/pako/repos/phpshop/core/user/controllers/IndexController.php -n 12
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/core/user/controllers/IndexController.php" lineno="14" state="enabled" hit_count="0" hit_value="0" id="983640033"></breakpoint></notify>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="27" id="983640033" resolved="resolved"></response>
+
+[360508] [Step Debug] <- eval -i 28 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzAzYzAzYTZjLTE2ZTAtNDhkZS05NGI3LTJmNjA5MzEzYTc1MyddPWV2YWwoIm5hbWVzcGFjZSBjb3JlXFxiYXNlXFxjb250cm9sbGVycztyZXR1cm4gKGlzc2V0KFwkYWRtaW4pKT8oXCRhZG1pbik6XCJJREVfRVZBTF9FUlJcIjsiKQ==
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="28"><property type="string" size="12" encoding="base64"><![CDATA[SURFX0VWQUxfRVJS]]></property></response>
+
+[360508] [Step Debug] <- eval -i 29 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJ2NjOWUyN2IwLTg1NWYtNDhmMC04ODFlLTQyZjdkZmIwOGE5YiddPWV2YWwoIm5hbWVzcGFjZSBjb3JlXFxiYXNlXFxjb250cm9sbGVycztyZXR1cm4gVVNFUl9DU1NfSlNbJ3N0eWxlcyddOyIp
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="29"><property type="array" children="1" numchildren="1" page="0" pagesize="100"><property name="0" type="string" size="13" encoding="base64"><![CDATA[Y3NzL3N0eWxlLmNzcw==]]></property></property></response>
+
+[360508] [Step Debug] <- eval -i 30 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzA1NjAzZjE3LTUxZTYtNDE4OS1hYzcxLTU2ZGFjYzNjYTQ4NCddPWV2YWwoIm5hbWVzcGFjZSBjb3JlXFxiYXNlXFxjb250cm9sbGVycztyZXR1cm4gQURNSU5fQ1NTX0pTWydzdHlsZXMnXTsiKQ==
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="30"><property type="array" children="0" numchildren="0" page="0" pagesize="100"></property></response>
+
+[360508] [Step Debug] <- eval -i 31 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzEzMzNjMTBiLTVmMTctNGIwZC1iNmIwLTBlMTZlYTk2NmVkYyddPWV2YWwoIm5hbWVzcGFjZSBjb3JlXFxiYXNlXFxjb250cm9sbGVycztyZXR1cm4gKGlzc2V0KFwkaXRlbSkpPyhcJGl0ZW0pOlwiSURFX0VWQUxfRVJSXCI7Iik=
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="31"><property type="string" size="12" encoding="base64"><![CDATA[SURFX0VWQUxfRVJS]]></property></response>
+
+[360508] [Step Debug] <- eval -i 32 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzIzZjg3Zjk3LTczMWYtNDJkNy1iNGQ2LWE3NGIxOTFmNWY3ZiddPWV2YWwoIm5hbWVzcGFjZSBjb3JlXFxiYXNlXFxjb250cm9sbGVycztyZXR1cm4gVEVNUExBVEU7Iik=
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="32"><property type="string" size="18" encoding="base64"><![CDATA[dGVtcGxhdGVzL2RlZmF1bHQv]]></property></response>
+
+[360508] [Step Debug] <- eval -i 33 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzNjYjg1N2ViLWViZWYtNGRhNS05ZmUxLTlkNzUxYzdhN2M5OCddPWV2YWwoIm5hbWVzcGFjZSBjb3JlXFxiYXNlXFxjb250cm9sbGVycztyZXR1cm4gVEVNUExBVEU7Iik=
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="33"><property type="string" size="18" encoding="base64"><![CDATA[dGVtcGxhdGVzL2RlZmF1bHQv]]></property></response>
+
+[360508] [Step Debug] <- eval -i 34 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzZiZDlhOTJmLTQxNzAtNDdiZi04MmMyLWUzNWMzYmQ4ZjUzYiddPWV2YWwoIm5hbWVzcGFjZSBjb3JlXFxiYXNlXFxjb250cm9sbGVycztyZXR1cm4gQURNSU5fQ1NTX0pTWydzdHlsZXMnXTsiKQ==
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="34"><property type="array" children="0" numchildren="0" page="0" pagesize="100"></property></response>
+
+[360508] [Step Debug] <- eval -i 35 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJ2QwOTAyNjRhLTMzOGYtNGYxZi05MTM3LWQ2YTk4NGJhNTJhMiddPWV2YWwoIm5hbWVzcGFjZSBjb3JlXFxiYXNlXFxjb250cm9sbGVycztyZXR1cm4gQURNSU5fQ1NTX0pTOyIp
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="35"><property type="array" children="1" numchildren="2" page="0" pagesize="100"><property name="styles" type="array" children="0" numchildren="0"></property><property name="scripts" type="array" children="0" numchildren="0"></property></property></response>
+
+[360508] [Step Debug] <- eval -i 36 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJ2UyNzBlYTU5LTA0MmUtNDkwNC05NWEzLTU3ZjRjNWExNDE3NyddPWV2YWwoIm5hbWVzcGFjZSBjb3JlXFxiYXNlXFxjb250cm9sbGVycztyZXR1cm4gQURNSU5fQ1NTX0pTOyIp
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="36"><property type="array" children="1" numchildren="2" page="0" pagesize="100"><property name="styles" type="array" children="0" numchildren="0"></property><property name="scripts" type="array" children="0" numchildren="0"></property></property></response>
+
+[360508] [Step Debug] <- eval -i 37 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJ2FlNjU2ODJlLWFkNjEtNDY4MC1hODA4LTFkMGUwYTllOWU4YyddPWV2YWwoIm5hbWVzcGFjZSBjb3JlXFxiYXNlXFxjb250cm9sbGVycztyZXR1cm4gQURNSU5fQ1NTX0pTOyIp
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="37"><property type="array" children="1" numchildren="2" page="0" pagesize="100"><property name="styles" type="array" children="0" numchildren="0"></property><property name="scripts" type="array" children="0" numchildren="0"></property></property></response>
+
+[360508] [Step Debug] <- eval -i 38 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzNjNDBhNTkwLWE1MTMtNDhjYS04MmM2LTM0MzA5ZjZhMzBlZiddPWV2YWwoIm5hbWVzcGFjZSBjb3JlXFxiYXNlXFxjb250cm9sbGVycztyZXR1cm4gVVNFUl9DU1NfSlNbJ3N0eWxlcyddOyIp
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="38"><property type="array" children="1" numchildren="1" page="0" pagesize="100"><property name="0" type="string" size="13" encoding="base64"><![CDATA[Y3NzL3N0eWxlLmNzcw==]]></property></property></response>
+
+[360508] [Step Debug] <- eval -i 39 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzAxZTQzNWM3LTQ3YWEtNDQ2ZC04YzU3LTRkMzQ1NzMzNzRlZiddPWV2YWwoIm5hbWVzcGFjZSBjb3JlXFxiYXNlXFxjb250cm9sbGVycztyZXR1cm4gKGlzc2V0KFwkaXRlbSkpPyhcJGl0ZW0pOlwiSURFX0VWQUxfRVJSXCI7Iik=
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="39"><property type="string" size="12" encoding="base64"><![CDATA[SURFX0VWQUxfRVJS]]></property></response>
+
+[360508] [Step Debug] <- breakpoint_set -i 40 -t line -f file:///home/pako/repos/phpshop/core/base/controllers/BaseMethods.php -n 12
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/core/base/controllers/BaseMethods.php" lineno="13" state="enabled" hit_count="0" hit_value="0" id="983640034"></breakpoint></notify>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="40" id="983640034" resolved="resolved"></response>
+
+[360508] [Step Debug] <- breakpoint_remove -i 41 -d 983640034
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_remove" transaction_id="41"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/core/base/controllers/BaseMethods.php" lineno="13" state="enabled" hit_count="0" hit_value="0" id="983640034"></breakpoint></response>
+
+[360508] [Step Debug] <- breakpoint_set -i 42 -t line -f file:///home/pako/repos/phpshop/core/base/controllers/BaseMethods.php -n 12
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/core/base/controllers/BaseMethods.php" lineno="13" state="enabled" hit_count="0" hit_value="0" id="983640035"></breakpoint></notify>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="42" id="983640035" resolved="resolved"></response>
+
+[360508] [Step Debug] <- breakpoint_remove -i 43 -d 983640035
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_remove" transaction_id="43"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/core/base/controllers/BaseMethods.php" lineno="13" state="enabled" hit_count="0" hit_value="0" id="983640035"></breakpoint></response>
+
+[360508] [Step Debug] <- breakpoint_set -i 44 -t line -f file:///home/pako/repos/phpshop/core/base/controllers/BaseMethods.php -n 12
+[360508] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/core/base/controllers/BaseMethods.php" lineno="13" state="enabled" hit_count="0" hit_value="0" id="983640036"></breakpoint></notify>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="44" id="983640036" resolved="resolved"></response>
+
+[360508] [Step Debug] <- breakpoint_remove -i 45 -d 983640036
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_remove" transaction_id="45"><breakpoint type="line" resolved="resolved" filename="file:///home/pako/repos/phpshop/core/base/controllers/BaseMethods.php" lineno="13" state="enabled" hit_count="0" hit_value="0" id="983640036"></breakpoint></response>
+
+[360508] [Step Debug] <- eval -i 46 -- JEdMT0JBTFNbJ0lERV9FVkFMX0NBQ0hFJ11bJzAzY2RiNDdlLTEyM2UtNGRjNi1iZDg5LTIwYjZjZWFlNDIwZSddPWV2YWwoIm5hbWVzcGFjZSBjb3JlXFxiYXNlXFxjb250cm9sbGVycztyZXR1cm4gKGlzc2V0KFwkbWVzc2FnZSkpPyhcJG1lc3NhZ2UpOlwiSURFX0VWQUxfRVJSXCI7Iik=
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="46"><property type="string" size="12" encoding="base64"><![CDATA[SURFX0VWQUxfRVJS]]></property></response>
+
+[360508] [Step Debug] <- stop -i 47
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="47" status="stopped" reason="ok"></response>
+
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="47" status="stopping" reason="ok"></response>
+
+[360508] [Step Debug] <- detach -i 48
+[360508] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="detach" transaction_id="48" status="stopping" reason="ok"></response>
+
+[360508] Log closed at 2022-02-16 22:28:37.959954
+
